@@ -105,14 +105,52 @@ class _HomePageState extends State<HomePage> {
               ),
               projectList(myWidth: myWidth),
               Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Got A Project?",
+                  "Got a project?",
                   style: GoogleFonts.nunito(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
                 ),
+              ),
+              Text(
+                "Let's talk.",
+                style: GoogleFonts.nunito(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "adg8503@gmail.com",
+                  style: GoogleFonts.nunito(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "That's it folks! Thank you for scrolling!",
+                  style: GoogleFonts.nunito(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+              Text(
+                "Checkout my socials below",
+                style: GoogleFonts.nunito(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: myWidth *0.25),
+                child: Socials(),
               )
             ],
           ),
