@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -37,68 +35,118 @@ class _HomePageState extends State<HomePage> {
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: CircleAvatar(
-                            backgroundImage: AssetImage("assets/images/flutter.png"),
+                            backgroundImage:
+                                AssetImage("assets/images/flutter.png"),
                           ),
                         ),
-                        SizedBox(height: 20,),
+                        SizedBox(
+                          height: 20,
+                        ),
                         Text(
-                          "Arunaditya",
+                          "ARUNADITYA",
                           style: GoogleFonts.roboto(
                             color: Colors.white,
-                            fontSize: 50,
+                            fontSize: 40,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         Text(
-                          "Dasgupta",
+                          "DASGUPTA",
                           style: GoogleFonts.roboto(
                             color: Colors.white70,
-                            fontSize: 50,
+                            fontSize: 40,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 40,),
+                        SizedBox(
+                          height: 40,
+                        ),
                         Row(
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: InkWell(
-                                onTap: () => launchUrl(Uri.http("https://github.com/lordADG")),
+                                onTap: () =>
+                                    launch('https://github.com/lordADG'),
                                 child: CircleAvatar(
-                                  backgroundImage: AssetImage("assets/images/github.png"),
+                                  backgroundImage:
+                                      AssetImage("assets/images/github.png"),
                                   radius: 15,
                                 ),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/images/linkedin.png"),
-                                radius: 15,
+                              child: InkWell(
+                                onTap: () => launch(
+                                    'https://www.linkedin.com/in/arunaditya-dasgupta-662aa4256'),
+                                child: CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage("assets/images/linkedin.png"),
+                                  radius: 15,
+                                ),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/images/instagram.png"),
-                                radius: 15,
+                              child: InkWell(
+                                onTap: () => launch(
+                                    'https://instagram.com/adg.k.saste.nashe?igshid=MzNlNGNkZWQ4Mg=='),
+                                child: CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage("assets/images/instagram.png"),
+                                  radius: 15,
+                                ),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/images/fb.png"),
-                                radius: 15,
+                              child: InkWell(
+                                onTap: () => launch(
+                                    'https://www.facebook.com/arunaditya.dasgupta'),
+                                child: CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage("assets/images/fb.png"),
+                                  radius: 15,
+                                ),
                               ),
                             )
-
                           ],
                         )
-
                       ],
                     ),
-                  )
+                  ),
                 ],
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 16),
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(topRight: Radius.circular(30),topLeft: Radius.circular(30)),
+                    color: Colors.black87
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("INTRODUCTION",style: GoogleFonts.roboto(
+                          color: Colors.white.withOpacity(0.5),fontSize: 15
+                        ),),
+                        SizedBox(height: 20,),
+                        Text("A 1st year engineering student from NIT, "
+                            "learning to code and getting acquainted with new "
+                            "technologies in the programming world. I'm an"
+                            " enthusiastic Flutter developer and currently "
+                            "working on a number of basic mobile apps. "
+                            "I have also learnt front-end web development "
+                            "and basics of UI/UX designing.", style: GoogleFonts.nunito(
+                          color: Colors.white, fontSize: 18,
+                        ),),
+                      ],
+                    ),
+                  ),
+                ),
               )
             ],
           ),
