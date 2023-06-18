@@ -134,7 +134,7 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "That's it folks! Thank you for scrolling!",
+                  "That's all folks! Thank you for scrolling!",
                   style: GoogleFonts.nunito(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
