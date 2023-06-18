@@ -149,7 +149,7 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.white),
               ),
               Padding(
-                padding: EdgeInsets.only(left: myWidth *0.25),
+                padding: EdgeInsets.only(left: myWidth * 0.25),
                 child: Socials(),
               )
             ],
@@ -228,8 +228,10 @@ class projectList extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
         decoration: BoxDecoration(
-          color: Colors.deepPurple,
-        ),
+            color: Colors.deepPurple,
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(30),
+                bottomRight: Radius.circular(30))),
         child: Container(
             width: myWidth,
             child: Column(
@@ -274,7 +276,7 @@ class projectList extends StatelessWidget {
                               Size(myWidth * 0.4, myWidth * 0.4)),
                           shape: MaterialStatePropertyAll(
                               RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10)))),
+                                  borderRadius: BorderRadius.circular(30)))),
                     ),
                     ElevatedButton(
                         onPressed: () {},
@@ -294,7 +296,7 @@ class projectList extends StatelessWidget {
                                 Size(myWidth * 0.4, myWidth * 0.4)),
                             shape: MaterialStatePropertyAll(
                                 RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10)))))
+                                    borderRadius: BorderRadius.circular(30)))))
                   ],
                 ),
                 SizedBox(
@@ -320,7 +322,7 @@ class projectList extends StatelessWidget {
                               Size(myWidth * 0.4, myWidth * 0.4)),
                           shape: MaterialStatePropertyAll(
                               RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10)))),
+                                  borderRadius: BorderRadius.circular(30)))),
                     ),
                     ElevatedButton(
                         onPressed: () {},
@@ -340,7 +342,7 @@ class projectList extends StatelessWidget {
                                 Size(myWidth * 0.4, myWidth * 0.4)),
                             shape: MaterialStatePropertyAll(
                                 RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10)))))
+                                    borderRadius: BorderRadius.circular(30)))))
                   ],
                 ),
                 SizedBox(
@@ -366,7 +368,7 @@ class projectList extends StatelessWidget {
                               Size(myWidth * 0.4, myWidth * 0.4)),
                           shape: MaterialStatePropertyAll(
                               RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10)))),
+                                  borderRadius: BorderRadius.circular(30)))),
                     ),
                     ElevatedButton(
                         onPressed: () {},
@@ -386,7 +388,7 @@ class projectList extends StatelessWidget {
                                 Size(myWidth * 0.4, myWidth * 0.4)),
                             shape: MaterialStatePropertyAll(
                                 RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10)))))
+                                    borderRadius: BorderRadius.circular(30)))))
                   ],
                 ),
                 SizedBox(
