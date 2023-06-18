@@ -1,16 +1,35 @@
-# portfolio
+<h1 align="center" id="title">Portfolio</h1>
 
-A new Flutter project.
+<p align="center"><img src="https://socialify.git.ci/lordADG/Portfolio/image?name=1&amp;owner=1&amp;theme=Light" alt="project-image"></p>
 
-## Getting Started
+<p id="description">My portfolio app which contains the link to all my socials as well as my previous flutter projects on github..</p>
 
-This project is a starting point for a Flutter application.
+<h2>🚀 Demo</h2>
 
-A few resources to get you started if this is your first Flutter project:
+[https://drive.google.com/uc?export=view&id=1ZRn5k7Yr43hullFG6pElNt\_xvJTdo8hj](https://drive.google.com/uc?export=view&id=1ZRn5k7Yr43hullFG6pElNt_xvJTdo8hj)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<h2>Project Screenshots:</h2>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://drive.google.com/uc?export=view&amp;id=1Z_g2FVU9t3JxnIR5DZgTXlw9t1HJu_ds" alt="project-screenshot" width="400" height="500/">
+
+<img src="https://drive.google.com/uc?export=view&amp;id=1ZbUMoUp3mIoaDCZHxweUM5Jvd8eOGwxZ" alt="project-screenshot" width="400" height="500/">
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Beautiful UI/UX
+*   links to my socials
+*   list of my flutter projects with links
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Flutter
+*   Dart
+*   Git
