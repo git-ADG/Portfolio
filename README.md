@@ -10,9 +10,9 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://drive.google.com/uc?export=view&amp;id=1Z_g2FVU9t3JxnIR5DZgTXlw9t1HJu_ds" alt="project-screenshot" width="400" height="500/">
+<img src="https://drive.google.com/uc?export=view&amp;id=1Z_g2FVU9t3JxnIR5DZgTXlw9t1HJu_ds" alt="project-screenshot" height="500/">
 
-<img src="https://drive.google.com/uc?export=view&amp;id=1ZbUMoUp3mIoaDCZHxweUM5Jvd8eOGwxZ" alt="project-screenshot" width="400" height="500/">
+<img src="https://drive.google.com/uc?export=view&amp;id=1ZbUMoUp3mIoaDCZHxweUM5Jvd8eOGwxZ" alt="project-screenshot" height="500/">
 
   
   
