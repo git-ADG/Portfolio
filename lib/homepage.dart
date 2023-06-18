@@ -260,7 +260,9 @@ class projectList extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        launch('https://github.com/lordADG/Flutter-Calculator-for-E-Cell');
+                      },
                       child: Text(
                         "CalcMate-a scientific calculator",
                         style: GoogleFonts.nunito(
@@ -279,7 +281,9 @@ class projectList extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(30)))),
                     ),
                     ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          launch('https://github.com/lordADG/catalog-app');
+                        },
                         child: Text(
                           "Catalog App",
                           style: GoogleFonts.nunito(
@@ -306,7 +310,9 @@ class projectList extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        launch('https://github.com/lordADG/pokedex');
+                      },
                       child: Text(
                         "Pokedex",
                         style: GoogleFonts.nunito(
@@ -325,7 +331,9 @@ class projectList extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(30)))),
                     ),
                     ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          launch('https://github.com/lordADG/ToDo-List');
+                        },
                         child: Text(
                           "ToDo List",
                           style: GoogleFonts.nunito(
@@ -352,7 +360,9 @@ class projectList extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        launch('https://github.com/lordADG/notes-app');
+                      },
                       child: Text(
                         "Notes App",
                         style: GoogleFonts.nunito(
@@ -371,7 +381,9 @@ class projectList extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(30)))),
                     ),
                     ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          launch('https://github.com/lordADG/Chat-GPT-Demo');
+                        },
                         child: Text(
                           "ChatGPT",
                           style: GoogleFonts.nunito(
