@@ -12,7 +12,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    double myHeight = MediaQuery.of(context).size.height;
     double myWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.blueGrey,
@@ -28,18 +27,19 @@ class _HomePageState extends State<HomePage> {
                     child: Image.asset("assets/images/portfolio image.png"),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 32.0, top: 40),
+                    padding: const EdgeInsets.only(left: 32.0, top: 40),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
                           child: CircleAvatar(
+                            radius: 30,
                             backgroundImage:
-                                AssetImage("assets/images/flutter.png"),
+                                AssetImage("assets/images/nits.png"),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Text(
@@ -58,17 +58,17 @@ class _HomePageState extends State<HomePage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
-                        Socials()
+                        const Socials()
                       ],
                     ),
                   ),
                 ],
               ),
               DecoratedBox(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                         topRight: Radius.circular(30),
                         topLeft: Radius.circular(30)),
@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                         style: GoogleFonts.nunito(
                             color: Colors.white.withOpacity(0.5), fontSize: 15),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Text(
@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              projectList(myWidth: myWidth),
+              ProjectList(myWidth: myWidth),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
@@ -150,7 +150,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Padding(
                 padding: EdgeInsets.only(left: myWidth * 0.25),
-                child: Socials(),
+                child: const Socials(),
               )
             ],
           ),
@@ -173,7 +173,7 @@ class Socials extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: InkWell(
             onTap: () => launch('https://github.com/lordADG'),
-            child: CircleAvatar(
+            child: const CircleAvatar(
               backgroundImage: AssetImage("assets/images/github.png"),
               radius: 15,
             ),
@@ -184,7 +184,7 @@ class Socials extends StatelessWidget {
           child: InkWell(
             onTap: () => launch(
                 'https://www.linkedin.com/in/arunaditya-dasgupta-662aa4256'),
-            child: CircleAvatar(
+            child: const CircleAvatar(
               backgroundImage: AssetImage("assets/images/linkedin.png"),
               radius: 15,
             ),
@@ -195,7 +195,7 @@ class Socials extends StatelessWidget {
           child: InkWell(
             onTap: () => launch(
                 'https://instagram.com/adg.k.saste.nashe?igshid=MzNlNGNkZWQ4Mg=='),
-            child: CircleAvatar(
+            child: const CircleAvatar(
               backgroundImage: AssetImage("assets/images/instagram.png"),
               radius: 15,
             ),
@@ -205,7 +205,7 @@ class Socials extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: InkWell(
             onTap: () => launch('https://www.facebook.com/arunaditya.dasgupta'),
-            child: CircleAvatar(
+            child: const CircleAvatar(
               backgroundImage: AssetImage("assets/images/fb.png"),
               radius: 15,
             ),
@@ -216,8 +216,8 @@ class Socials extends StatelessWidget {
   }
 }
 
-class projectList extends StatelessWidget {
-  const projectList({
+class ProjectList extends StatelessWidget {
+  const ProjectList({
     super.key,
     required this.myWidth,
   });
@@ -227,16 +227,16 @@ class projectList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             color: Colors.deepPurple,
             borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(30),
                 bottomRight: Radius.circular(30))),
-        child: Container(
+        child: SizedBox(
             width: myWidth,
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 Text(
@@ -253,7 +253,7 @@ class projectList extends StatelessWidget {
                       fontSize: 24,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -263,47 +263,47 @@ class projectList extends StatelessWidget {
                       onPressed: () {
                         launch('https://github.com/lordADG/Flutter-Calculator-for-E-Cell');
                       },
-                      child: Text(
-                        "CalcMate-a scientific calculator",
-                        style: GoogleFonts.nunito(
-                            fontSize: 18, fontWeight: FontWeight.bold),
-                      ),
                       style: ButtonStyle(
                           backgroundColor:
-                              MaterialStatePropertyAll(Colors.deepPurple),
-                          elevation: MaterialStatePropertyAll(5),
-                          shadowColor: MaterialStatePropertyAll(Colors.black),
-                          padding: MaterialStatePropertyAll(EdgeInsets.all(16)),
+                              const MaterialStatePropertyAll(Colors.deepPurple),
+                          elevation: const MaterialStatePropertyAll(5),
+                          shadowColor: const MaterialStatePropertyAll(Colors.black),
+                          padding: const MaterialStatePropertyAll(EdgeInsets.all(16)),
                           fixedSize: MaterialStatePropertyAll(
                               Size(myWidth * 0.4, myWidth * 0.4)),
                           shape: MaterialStatePropertyAll(
                               RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(30)))),
+                      child: Text(
+                        "CalcMate-a scientific calculator",
+                        style: GoogleFonts.nunito(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
                     ),
                     ElevatedButton(
                         onPressed: () {
                           launch('https://github.com/lordADG/catalog-app');
                         },
-                        child: Text(
-                          "Catalog App",
-                          style: GoogleFonts.nunito(
-                              fontSize: 18, fontWeight: FontWeight.bold),
-                        ),
                         style: ButtonStyle(
                             backgroundColor:
-                                MaterialStatePropertyAll(Colors.deepPurple),
-                            elevation: MaterialStatePropertyAll(5),
-                            shadowColor: MaterialStatePropertyAll(Colors.black),
+                                const MaterialStatePropertyAll(Colors.deepPurple),
+                            elevation: const MaterialStatePropertyAll(5),
+                            shadowColor: const MaterialStatePropertyAll(Colors.black),
                             padding:
-                                MaterialStatePropertyAll(EdgeInsets.all(16)),
+                                const MaterialStatePropertyAll(EdgeInsets.all(16)),
                             fixedSize: MaterialStatePropertyAll(
                                 Size(myWidth * 0.4, myWidth * 0.4)),
                             shape: MaterialStatePropertyAll(
                                 RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(30)))))
+                                    borderRadius: BorderRadius.circular(30)))),
+                        child: Text(
+                          "Catalog App",
+                          style: GoogleFonts.nunito(
+                              fontSize: 18, fontWeight: FontWeight.bold),
+                        ))
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -313,47 +313,47 @@ class projectList extends StatelessWidget {
                       onPressed: () {
                         launch('https://github.com/lordADG/pokedex');
                       },
-                      child: Text(
-                        "Pokedex",
-                        style: GoogleFonts.nunito(
-                            fontSize: 18, fontWeight: FontWeight.bold),
-                      ),
                       style: ButtonStyle(
                           backgroundColor:
-                              MaterialStatePropertyAll(Colors.deepPurple),
-                          elevation: MaterialStatePropertyAll(5),
-                          shadowColor: MaterialStatePropertyAll(Colors.black),
-                          padding: MaterialStatePropertyAll(EdgeInsets.all(16)),
+                              const MaterialStatePropertyAll(Colors.deepPurple),
+                          elevation: const MaterialStatePropertyAll(5),
+                          shadowColor: const MaterialStatePropertyAll(Colors.black),
+                          padding: const MaterialStatePropertyAll(EdgeInsets.all(16)),
                           fixedSize: MaterialStatePropertyAll(
                               Size(myWidth * 0.4, myWidth * 0.4)),
                           shape: MaterialStatePropertyAll(
                               RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(30)))),
+                      child: Text(
+                        "Pokedex",
+                        style: GoogleFonts.nunito(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
                     ),
                     ElevatedButton(
                         onPressed: () {
                           launch('https://github.com/lordADG/ToDo-List');
                         },
-                        child: Text(
-                          "ToDo List",
-                          style: GoogleFonts.nunito(
-                              fontSize: 18, fontWeight: FontWeight.bold),
-                        ),
                         style: ButtonStyle(
                             backgroundColor:
-                                MaterialStatePropertyAll(Colors.deepPurple),
-                            elevation: MaterialStatePropertyAll(5),
-                            shadowColor: MaterialStatePropertyAll(Colors.black),
+                                const MaterialStatePropertyAll(Colors.deepPurple),
+                            elevation: const MaterialStatePropertyAll(5),
+                            shadowColor: const MaterialStatePropertyAll(Colors.black),
                             padding:
-                                MaterialStatePropertyAll(EdgeInsets.all(16)),
+                                const MaterialStatePropertyAll(EdgeInsets.all(16)),
                             fixedSize: MaterialStatePropertyAll(
                                 Size(myWidth * 0.4, myWidth * 0.4)),
                             shape: MaterialStatePropertyAll(
                                 RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(30)))))
+                                    borderRadius: BorderRadius.circular(30)))),
+                        child: Text(
+                          "ToDo List",
+                          style: GoogleFonts.nunito(
+                              fontSize: 18, fontWeight: FontWeight.bold),
+                        ))
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -363,47 +363,47 @@ class projectList extends StatelessWidget {
                       onPressed: () {
                         launch('https://github.com/lordADG/notes-app');
                       },
-                      child: Text(
-                        "Notes App",
-                        style: GoogleFonts.nunito(
-                            fontSize: 18, fontWeight: FontWeight.bold),
-                      ),
                       style: ButtonStyle(
                           backgroundColor:
-                              MaterialStatePropertyAll(Colors.deepPurple),
-                          elevation: MaterialStatePropertyAll(5),
-                          shadowColor: MaterialStatePropertyAll(Colors.black),
-                          padding: MaterialStatePropertyAll(EdgeInsets.all(16)),
+                              const MaterialStatePropertyAll(Colors.deepPurple),
+                          elevation: const MaterialStatePropertyAll(5),
+                          shadowColor: const MaterialStatePropertyAll(Colors.black),
+                          padding: const MaterialStatePropertyAll(EdgeInsets.all(16)),
                           fixedSize: MaterialStatePropertyAll(
                               Size(myWidth * 0.4, myWidth * 0.4)),
                           shape: MaterialStatePropertyAll(
                               RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(30)))),
+                      child: Text(
+                        "Notes App",
+                        style: GoogleFonts.nunito(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
                     ),
                     ElevatedButton(
                         onPressed: () {
                           launch('https://github.com/lordADG/Chat-GPT-Demo');
                         },
-                        child: Text(
-                          "ChatGPT",
-                          style: GoogleFonts.nunito(
-                              fontSize: 18, fontWeight: FontWeight.bold),
-                        ),
                         style: ButtonStyle(
                             backgroundColor:
-                                MaterialStatePropertyAll(Colors.deepPurple),
-                            elevation: MaterialStatePropertyAll(5),
-                            shadowColor: MaterialStatePropertyAll(Colors.black),
+                                const MaterialStatePropertyAll(Colors.deepPurple),
+                            elevation: const MaterialStatePropertyAll(5),
+                            shadowColor: const MaterialStatePropertyAll(Colors.black),
                             padding:
-                                MaterialStatePropertyAll(EdgeInsets.all(16)),
+                                const MaterialStatePropertyAll(EdgeInsets.all(16)),
                             fixedSize: MaterialStatePropertyAll(
                                 Size(myWidth * 0.4, myWidth * 0.4)),
                             shape: MaterialStatePropertyAll(
                                 RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(30)))))
+                                    borderRadius: BorderRadius.circular(30)))),
+                        child: Text(
+                          "ChatGPT",
+                          style: GoogleFonts.nunito(
+                              fontSize: 18, fontWeight: FontWeight.bold),
+                        ))
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
               ],
