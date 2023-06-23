@@ -256,152 +256,156 @@ class ProjectList extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    ElevatedButton(
-                      onPressed: () {
-                        launch('https://github.com/lordADG/Flutter-Calculator-for-E-Cell');
-                      },
-                      style: ButtonStyle(
-                          backgroundColor:
-                              const MaterialStatePropertyAll(Colors.deepPurple),
-                          elevation: const MaterialStatePropertyAll(5),
-                          shadowColor: const MaterialStatePropertyAll(Colors.black),
-                          padding: const MaterialStatePropertyAll(EdgeInsets.all(16)),
-                          fixedSize: MaterialStatePropertyAll(
-                              Size(myWidth * 0.4, myWidth * 0.4)),
-                          shape: MaterialStatePropertyAll(
-                              RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30)))),
-                      child: Text(
-                        "CalcMate-a scientific calculator",
-                        style: GoogleFonts.nunito(
-                            fontSize: 18, fontWeight: FontWeight.bold),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: ElevatedButton(
+                          onPressed: () {
+                            launch('https://github.com/lordADG/Flutter-Calculator-for-E-Cell');
+                          },
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  const MaterialStatePropertyAll(Colors.deepPurple),
+                              elevation: const MaterialStatePropertyAll(5),
+                              shadowColor: const MaterialStatePropertyAll(Colors.black),
+                              padding: const MaterialStatePropertyAll(EdgeInsets.all(16)),
+                              fixedSize: MaterialStatePropertyAll(
+                                  Size(myWidth * 0.4, myWidth * 0.4)),
+                              shape: MaterialStatePropertyAll(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30)))),
+                          child: Text(
+                            "CalcMate-a scientific calculator",
+                            style: GoogleFonts.nunito(
+                                fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                        ),
                       ),
-                    ),
-                    ElevatedButton(
-                        onPressed: () {
-                          launch('https://github.com/lordADG/catalog-app');
-                        },
-                        style: ButtonStyle(
-                            backgroundColor:
-                                const MaterialStatePropertyAll(Colors.deepPurple),
-                            elevation: const MaterialStatePropertyAll(5),
-                            shadowColor: const MaterialStatePropertyAll(Colors.black),
-                            padding:
-                                const MaterialStatePropertyAll(EdgeInsets.all(16)),
-                            fixedSize: MaterialStatePropertyAll(
-                                Size(myWidth * 0.4, myWidth * 0.4)),
-                            shape: MaterialStatePropertyAll(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(30)))),
-                        child: Text(
-                          "Catalog App",
-                          style: GoogleFonts.nunito(
-                              fontSize: 18, fontWeight: FontWeight.bold),
-                        ))
-                  ],
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    ElevatedButton(
-                      onPressed: () {
-                        launch('https://github.com/lordADG/pokedex');
-                      },
-                      style: ButtonStyle(
-                          backgroundColor:
-                              const MaterialStatePropertyAll(Colors.deepPurple),
-                          elevation: const MaterialStatePropertyAll(5),
-                          shadowColor: const MaterialStatePropertyAll(Colors.black),
-                          padding: const MaterialStatePropertyAll(EdgeInsets.all(16)),
-                          fixedSize: MaterialStatePropertyAll(
-                              Size(myWidth * 0.4, myWidth * 0.4)),
-                          shape: MaterialStatePropertyAll(
-                              RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30)))),
-                      child: Text(
-                        "Pokedex",
-                        style: GoogleFonts.nunito(
-                            fontSize: 18, fontWeight: FontWeight.bold),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: ElevatedButton(
+                            onPressed: () {
+                              launch('https://github.com/lordADG/catalog-app');
+                            },
+                            style: ButtonStyle(
+                                backgroundColor:
+                                    const MaterialStatePropertyAll(Colors.deepPurple),
+                                elevation: const MaterialStatePropertyAll(5),
+                                shadowColor: const MaterialStatePropertyAll(Colors.black),
+                                padding:
+                                    const MaterialStatePropertyAll(EdgeInsets.all(16)),
+                                fixedSize: MaterialStatePropertyAll(
+                                    Size(myWidth * 0.4, myWidth * 0.4)),
+                                shape: MaterialStatePropertyAll(
+                                    RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(30)))),
+                            child: Text(
+                              "Catalog App",
+                              style: GoogleFonts.nunito(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
                       ),
-                    ),
-                    ElevatedButton(
-                        onPressed: () {
-                          launch('https://github.com/lordADG/ToDo-List');
-                        },
-                        style: ButtonStyle(
-                            backgroundColor:
-                                const MaterialStatePropertyAll(Colors.deepPurple),
-                            elevation: const MaterialStatePropertyAll(5),
-                            shadowColor: const MaterialStatePropertyAll(Colors.black),
-                            padding:
-                                const MaterialStatePropertyAll(EdgeInsets.all(16)),
-                            fixedSize: MaterialStatePropertyAll(
-                                Size(myWidth * 0.4, myWidth * 0.4)),
-                            shape: MaterialStatePropertyAll(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(30)))),
-                        child: Text(
-                          "ToDo List",
-                          style: GoogleFonts.nunito(
-                              fontSize: 18, fontWeight: FontWeight.bold),
-                        ))
-                  ],
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    ElevatedButton(
-                      onPressed: () {
-                        launch('https://github.com/lordADG/notes-app');
-                      },
-                      style: ButtonStyle(
-                          backgroundColor:
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: ElevatedButton(
+                          onPressed: () {
+                            launch('https://github.com/lordADG/pokedex');
+                          },
+                          style: ButtonStyle(
+                              backgroundColor:
                               const MaterialStatePropertyAll(Colors.deepPurple),
-                          elevation: const MaterialStatePropertyAll(5),
-                          shadowColor: const MaterialStatePropertyAll(Colors.black),
-                          padding: const MaterialStatePropertyAll(EdgeInsets.all(16)),
-                          fixedSize: MaterialStatePropertyAll(
-                              Size(myWidth * 0.4, myWidth * 0.4)),
-                          shape: MaterialStatePropertyAll(
-                              RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30)))),
-                      child: Text(
-                        "Notes App",
-                        style: GoogleFonts.nunito(
-                            fontSize: 18, fontWeight: FontWeight.bold),
+                              elevation: const MaterialStatePropertyAll(5),
+                              shadowColor: const MaterialStatePropertyAll(Colors.black),
+                              padding: const MaterialStatePropertyAll(EdgeInsets.all(16)),
+                              fixedSize: MaterialStatePropertyAll(
+                                  Size(myWidth * 0.4, myWidth * 0.4)),
+                              shape: MaterialStatePropertyAll(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30)))),
+                          child: Text(
+                            "Pokedex",
+                            style: GoogleFonts.nunito(
+                                fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                        ),
                       ),
-                    ),
-                    ElevatedButton(
-                        onPressed: () {
-                          launch('https://github.com/lordADG/Chat-GPT-Demo');
-                        },
-                        style: ButtonStyle(
-                            backgroundColor:
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: ElevatedButton(
+                            onPressed: () {
+                              launch('https://github.com/lordADG/ToDo-List');
+                            },
+                            style: ButtonStyle(
+                                backgroundColor:
                                 const MaterialStatePropertyAll(Colors.deepPurple),
-                            elevation: const MaterialStatePropertyAll(5),
-                            shadowColor: const MaterialStatePropertyAll(Colors.black),
-                            padding:
+                                elevation: const MaterialStatePropertyAll(5),
+                                shadowColor: const MaterialStatePropertyAll(Colors.black),
+                                padding:
                                 const MaterialStatePropertyAll(EdgeInsets.all(16)),
-                            fixedSize: MaterialStatePropertyAll(
-                                Size(myWidth * 0.4, myWidth * 0.4)),
-                            shape: MaterialStatePropertyAll(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(30)))),
-                        child: Text(
-                          "ChatGPT",
-                          style: GoogleFonts.nunito(
-                              fontSize: 18, fontWeight: FontWeight.bold),
-                        ))
-                  ],
+                                fixedSize: MaterialStatePropertyAll(
+                                    Size(myWidth * 0.4, myWidth * 0.4)),
+                                shape: MaterialStatePropertyAll(
+                                    RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(30)))),
+                            child: Text(
+                              "ToDo List",
+                              style: GoogleFonts.nunito(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: ElevatedButton(
+                          onPressed: () {
+                            launch('https://github.com/lordADG/notes-app');
+                          },
+                          style: ButtonStyle(
+                              backgroundColor:
+                              const MaterialStatePropertyAll(Colors.deepPurple),
+                              elevation: const MaterialStatePropertyAll(5),
+                              shadowColor: const MaterialStatePropertyAll(Colors.black),
+                              padding: const MaterialStatePropertyAll(EdgeInsets.all(16)),
+                              fixedSize: MaterialStatePropertyAll(
+                                  Size(myWidth * 0.4, myWidth * 0.4)),
+                              shape: MaterialStatePropertyAll(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30)))),
+                          child: Text(
+                            "Notes App",
+                            style: GoogleFonts.nunito(
+                                fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: ElevatedButton(
+                            onPressed: () {
+                              launch('https://github.com/lordADG/Chat-GPT-Demo');
+                            },
+                            style: ButtonStyle(
+                                backgroundColor:
+                                const MaterialStatePropertyAll(Colors.deepPurple),
+                                elevation: const MaterialStatePropertyAll(5),
+                                shadowColor: const MaterialStatePropertyAll(Colors.black),
+                                padding:
+                                const MaterialStatePropertyAll(EdgeInsets.all(16)),
+                                fixedSize: MaterialStatePropertyAll(
+                                    Size(myWidth * 0.4, myWidth * 0.4)),
+                                shape: MaterialStatePropertyAll(
+                                    RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(30)))),
+                            child: Text(
+                              "ChatGPT",
+                              style: GoogleFonts.nunito(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            )),
+                      )
+                    ],
+                  ),
                 ),
                 const SizedBox(
                   height: 20,
